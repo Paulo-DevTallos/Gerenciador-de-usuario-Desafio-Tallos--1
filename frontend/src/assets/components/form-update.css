@@ -1,0 +1,39 @@
+.modal-update {
+    background-color: #80808068;
+    filter : drop-shadow(0 0 3px gray);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: roar .5s ease;
+  }
+
+  .modal-update #color-btn {
+    background-color: red;
+  }
+  
+  @keyframes roar {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.0);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1.1);
+    }
+  }
+  .modal-update form {
+    width: 350px;
+  }
+
+  @media(max-width: 480px) {
+    .modal-update form {
+      width: 85%;
+    }
+  }

@@ -1,0 +1,95 @@
+.header-user {
+  width: 100%;
+  padding: 16px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  filter: drop-shadow(2px -2px 5px #80808086);
+  position: relative;
+}
+
+.header-user .useful-links a {
+  padding: 3px 10px;
+  border: 1px solid #009acc;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 0 5px;
+  color: #009acc;
+  transition: .5s ease;
+}
+
+.header-user .useful-links a:hover {
+  background-color: #009acc;
+  color: #fff;
+}
+
+.header-user img {
+  width: 50px;
+}
+
+.header-user .user-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-user .user-field p {
+  font-size: var(--secondary-font-text-size);
+}
+
+.header-user .user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer;
+  background-color: #e4e4e4;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-left: 20px;
+}
+
+.header-user .user-icon .user-name {
+  padding-right: 30px;
+}
+
+.header-user .user-icon .icon {
+  width: 38px;
+}
+
+@media(max-width: 768px) {
+  .header-user img {
+    width: 35px;
+  }
+}
+
+@media(max-width: 600px) {
+  .header-user {
+    padding: 10px 20px;
+  }
+  .header-user .user-name {
+    display: none;
+  }
+
+  .header-user .useful-links a {
+    padding: 3px 5px;
+    background-color: #009acc;
+    color: var(--primary-color);
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 480px) {
+  .header-user .user-field p {
+    display: none;
+  }
+  .header-user .user-icon {
+    width: 39px;
+    height: 39px;
+  }
+  .header-user .user-icon .icon{
+    width: 40px;
+    height: 35px;
+  }
+}

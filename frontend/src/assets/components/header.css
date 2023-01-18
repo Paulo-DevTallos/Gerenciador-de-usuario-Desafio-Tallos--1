@@ -1,0 +1,30 @@
+.header {
+  background-color: #fff;
+  box-shadow: 5px 0 10px rgba(128, 128, 128, 0.445);
+  padding: 15px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media(max-width: 768px) {
+  .header {
+    padding: 15px 80px;
+  }
+}
+
+@media(max-width: 600px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .header img {
+    width: 100px;
+  }
+}

@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  app:
+    build: .
+    entrypoint: sh ./.docker/entrypoint.sh
+    container_name: app-front-tallos
+    volumes: 
+      - .:/app
+    working_dir: /app
+    ports:
+      - 8000:8000
+    environment: 
+      - CHOKIDAR_USEPOLLING=true
+    

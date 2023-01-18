@@ -1,0 +1,45 @@
+.container-contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    background-color: #fff;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px #80808060;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-list {
+    background-color: #fff;
+    box-shadow: -2px 2px 5px #80808060;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 5px;
+}
+
+.user-list .user-avaliable {
+    padding: 10px;
+    border-bottom: 1px solid #80808068;
+    z-index: 0;
+}
+
+.user-list .user-avaliable h4 {
+    font-weight: 500;
+}
+
+@media(max-width: 768px) {
+    .container-contacts {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .container-form, .user-list {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

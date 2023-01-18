@@ -1,0 +1,94 @@
+.container-dash {
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.container-dash .menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-dash li {
+  width: 33.3%;
+  height: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: var(--secondary-font-text-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  filter: drop-shadow(-2px 2px 3px #c4c4c4);
+  cursor: pointer;
+}
+
+.container-dash li svg {
+  font-size: 20px;
+}
+
+.container-dash li span {
+  text-align: center;
+}
+
+.container-dash li:hover {
+  color: var(--primary-blue-theme);
+  animation: jump .5s;
+}
+
+.container-dash li:last-child {
+  text-align: center;
+}
+
+.container-dash li:last-child span {
+  display: block;
+  padding-top: 10px;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.container-dash a {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+}
+
+.container-dash a span {
+  margin-top: 20px;
+}
+
+@media(max-width: 1024px) {
+  .container-dash .menu li span {
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 800px) {
+  .container-dash .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-dash .menu li {
+    width: 100%;
+  }
+
+  .container-dash .menu li span {
+    padding: 0;
+  }
+
+  .container-dash .menu li a {
+    text-align: center;
+  }
+}

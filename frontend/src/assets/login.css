@@ -1,0 +1,104 @@
+.container-login {
+    display: flex;
+    height: 100vh;
+}
+
+.container-login .banner {
+    width: 70%;
+    background-image: url('/img/image-sistema.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-login .login-container {
+    height: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.login-container form {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-container .logo-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-container img {
+    width: 80px;
+}
+
+.login-container input[type="email"], .reveling-password {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-gray-theme);
+}
+
+.login-container input {
+    padding: 0 12px;
+}
+
+.login-container .reveling-password {
+    display: flex;
+}
+
+.login-container .reveling-password input {
+    height: 100%;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.login-container .reveling-password span {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reveling-password span svg {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-container p {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--primary-gray-theme);
+}
+
+/* responsivity */
+@media(max-width: 1000px) {
+    .page-login .banner {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media(max-width: 950px) {
+    .banner {
+        display: none;
+    }
+    .login-container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+    .login-container form {
+        padding: 80px 40px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,61 @@
+.card {
+  width: 300px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 10000;
+  top: 80px;
+  right: 85px;
+  padding: 10px;
+  font-size: var(--secondary-font-text-size);
+  cursor: auto;
+  animation: appearOnClick .2s linear;
+}
+
+@keyframes appearOnClick {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    z-index: 10000;
+  }
+  to { 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    z-index: 10000;
+  }
+}
+
+.card .id {
+  padding: 10px;
+}
+.card .card-id {
+  padding: 10px;
+  border-top: 1px solid #c6c6c6;
+}
+
+.card .card-id svg {
+  margin-left: 9px;
+  font-size: 20px; 
+}
+
+.card #click {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: .1s ease;
+}
+
+.card #click:hover {
+  color: #009acc;
+}
+
+@media(max-width: 768px) {
+  .card {
+    width: 200px;
+    right: 10px;
+    font-size: 12px;
+  }
+}

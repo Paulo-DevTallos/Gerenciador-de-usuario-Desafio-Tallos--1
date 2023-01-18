@@ -1,0 +1,58 @@
+.table {
+    padding: 0 10px;
+    font-size: 13px;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.users .empty-list {
+    height: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    text-align: center;
+}
+
+.table-thead {
+    width: 100%;
+    text-align: start;
+}
+
+.table-thead th, td {
+    text-align: start;
+    padding: 13px 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.table .command-user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.table .command-user svg {
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.table .command-user svg:first-child:hover {
+    color: #009acc;
+    transform: scale(1.1);
+}
+
+.table .command-user svg:last-child:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+@media(max-width: 850px) {
+    .table-thead th, td {
+        padding: 13px 15px;
+        align-items: center;
+    }
+}
+

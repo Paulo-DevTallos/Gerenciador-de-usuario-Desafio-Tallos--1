@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--secondary-blue-theme);
+  text-align: center;
+  color: var(--primary-color);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 480px) {
+  .footer {
+    font-size: 12px;
+  }
+}
